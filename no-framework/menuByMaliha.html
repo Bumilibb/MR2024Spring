@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu By Maliha</title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(220, 250, 230);
+        }
+        .one-box, .extra-second-box{
+            max-width: 90%;
+            width: 1150px;
+            padding: 15px;
+            margin: 25px auto;
+            background-color: white;
+        }
+        .one-box{
+            border-left: 5px solid limegreen; 
+        }
+        .extra-second-box{
+            border-left: 5px solid yellow;
+        }
+        .one-box h2, .extra-second-box h2 {
+            font-size: 18px; 
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .one-box p, .extra-second-box p {
+            font-size: 16px; 
+        }
+        .menu-bar {
+            background-color: #399f3b; 
+            display: flex;
+            flex-direction: row;
+            padding-left: 0; 
+            margin-left: 0; 
+        }
+        .dropdown {
+            overflow: hidden;
+            width: 100px;
+            padding-left: 0; 
+            margin-left: 0; 
+        }
+        .dropdown .dropbtn {
+            font-size: 18px;  
+            border: none;
+            outline: none;
+            color: black;
+            padding: 4px 60px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            padding-left: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lawngreen;
+            min-width: 100px;
+        }
+        .dropdown-content a {
+            float: none;
+            padding: 2px 2px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .menu-bar .dropdown-content a{
+            color: rgb(46, 13, 123);
+            background: #26c22b;
+        }
+        .dropdown-content a:hover {
+            background-color: #15f63b;
+     
+         }
+        .dropdown:hover .dropbtn{
+            background-color:  #26c22b;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #editDropDown:focus-within .dropdown-content {
+            display: block;
+        }
+        #editDropDown:focus-within .dropbtn {
+            background-color: #26c22b;
+        }
+
+  </style>
+</head>
+<body>
+
+<div class="menu-bar">
+    <div class="dropdown">
+        <button class="dropbtn"><b>File</b></button>
+        <div class="dropdown-content"> 
+            <a href="">New</a>
+            <a href="">Open</a>
+            <a href="">Save</a>
+            <a href="">Print</a>
+            <a href="">Close</a>
+        </div>
+    </div>
+    <div class="dropdown" id="editDropDown">
+        <button class="dropbtn">Edit</button>
+        <div class="dropdown-content">
+            <a href="">Undo</a>
+            <a href="">Redo</a>
+            <a href="">Cut</a>
+            <a href="">Copy</a>
+            <a href="">Paste</a>
+            <a href="">Delete</a>
+            <a href="">Select All</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn"><b>View</b></button>
+        <div class="dropdown-content">
+          <a href="">Zoom In</a>
+          <a href="">Zoom Out</a>
+          <a href="">Actual Size</a>
+          <a href="">Fit Page</a>
+          <a href="">Fit Width</a>
+          <a href="">Fit Height</a>
+          <a href="">Rotate Left</a>
+          <a href="">Rotate Right</a>
+          <a href="">Full Screen</a>
+        </div>
+    </div>
+  </div>
+  
+  <div class="one-box">
+    <h2>Instructions</h2>
+    <p>Recreate this page using <b><em>only CSS</em>,</b>.Do yourself a favor and 1) Do not view the source. Figure it out yourself. 2) Do not search for the solution. Learn CSS until you know enough to do this.</p>
+  </div>
+  <div class="extra-second-box">
+    <h2>Extra Credit</h2>
+    <p>Notice how the Edit menu (besides for not being bold) reacts to clicks. If you click the edit menu, it remains open until you click somewhere else. (This you might need to search for) </p>
+  </div>
+
+</body>
+</html>
