@@ -1,15 +1,11 @@
-<script>
-export default {
-    setup () {
-        
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
 
-        return {}
-    }
-}
+
 </script>
 
 <template>
-   <nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="https://bulma.io">
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -24,9 +20,9 @@ export default {
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <RouterLink to="/" class="navbar-item">
         Home
-      </a>
+      </RouterLink>
 
       <a class="navbar-item">
         Documentation
@@ -38,9 +34,9 @@ export default {
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">
+          <RouterLink to="/about" class="navbar-item">
             About
-          </a>
+          </RouterLink>
           <a class="navbar-item">
             Jobs
           </a>
@@ -71,6 +67,14 @@ export default {
 </nav>
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
+
+    .router-link-exact-active {
+        border-bottom: 2px solid #00d1b2;
+    }
+
+    .router-link-active {
+        background-color: aquamarine;
+    }
 
 </style>
