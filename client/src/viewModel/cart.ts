@@ -1,4 +1,4 @@
-/*is static*/ 
+
 import { ref, computed, watch } from "vue"
 import type { Product } from "@/model/products"
 
